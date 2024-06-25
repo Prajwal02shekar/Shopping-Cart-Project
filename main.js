@@ -1,6 +1,6 @@
-// let loginBtn = document.querySelector("button")
-// let userName = localStorage.getItem("user-name")
-// loginBtn.innerHTML = `Logged in as ${userName}`
+let loginBtn = document.querySelector("button")
+let userName = localStorage.getItem("user-name")
+loginBtn.innerHTML = `Logged in as ${userName}`
 
 
 let shop = document.getElementById("shop");
