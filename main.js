@@ -1,8 +1,3 @@
-let loginBtn = document.querySelector("button")
-let userName = localStorage.getItem("user-name")
-loginBtn.innerHTML = `Logged in as ${userName}`
-
-
 
 //todo ------------------------------------------------------
 let shop = document.getElementById("shop");
@@ -82,17 +77,17 @@ let update = (id) => {
 
     if (quantityElement) {
         quantityElement.innerHTML = search.item;
-        // calculation();
+        calculation();
     } else {
         console.error(`Element with ID ${id} not found`);
     }
 };
 
-// let calculation = () => {
-//   let cartIcon = document.getElementById("cartAmount");
-//   cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
-// };
+let calculation = () => {
+  let cartIcon = document.getElementById("cartAmount");
+  cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
+};
 
-// calculation();
+calculation();
 
 
