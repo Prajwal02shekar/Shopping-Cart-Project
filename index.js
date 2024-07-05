@@ -45,7 +45,7 @@ ele.addEventListener("submit", (e) => {
     }
     else if (uid == uName && upwd == upassword) {
         alert("Successfully logged in")
-        open("./index.html")
+        open("./home.html")
     }
 })
 
