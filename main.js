@@ -6,6 +6,7 @@ let basket = JSON.parse(localStorage.getItem("data")) || [];
 
 let fetchdata = async function () {
     let res = await fetch("https://fakestoreapi.com/products");
+    // let res=await fetch("https://api.escuelajs.co/api/v1/products")
     let data = await res.json();
     return data;
 };
@@ -15,7 +16,7 @@ fetchdata().then((d) => {
 
     let generateShop = () => {
         shop.innerHTML = d.map((item) => {
-            let { id, image, title, price } = item;
+            let { id, image, title, price,description,ratings} = item;
             let search = basket.find((y) => y.id === id) || [];
             return `<div id=product-id-${id} class="item">
             <div class="img-box"><img src="${image}" alt=""></div>

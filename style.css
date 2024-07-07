@@ -6,11 +6,19 @@
 
 body {
     font-family: sans-serif;
-    /* background-color: #bebdc5; */
-    background-color: #fff;
+    background-color: #efefef;
 }
 i{
    cursor: pointer; 
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.mainBody{
+    width: 100%; 
+     /* margin: 0 auto; */
+    background-color: #eee;
 }
 /* ---------------------------- navbar style starts here-------------------------- */
 .navbar {
@@ -38,6 +46,7 @@ button {
     border-radius: 8px;
 }
 .cart {
+
     background-color: white;
     color: #212529;
     font-size: 30px;
@@ -83,7 +92,7 @@ button {
     }
 }
 .item {
-    border: 2px solid #212529;
+    border: 3px solid #092d52;
     border-radius: 5px;
 }
 
@@ -101,7 +110,7 @@ button {
 }
 
 .buttons {
-    border: 2px solid #212529;
+    /* border: 2px solid #212529; */
     border-radius: 5px;
     align-items: center;
     display: flex;
@@ -125,4 +134,59 @@ img{
     height: 250px;
     width: 200px;
    border-radius: 5px
+}
+
+/* ! styles for cart css */
+.text-container{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.HomeBtn{
+    background-color: #212529;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.bi-x-lg{
+    color: red;
+    font-weight: bold;
+ 
+}
+
+/*! shopping cart  */
+
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1,320px);
+    justify-content: center;
+    gap: 15px;
+}
+
+.cart-item{
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+
+}
+
+.title-price-x{
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cart-item-price{
+    background-color: #212529;
+    color: #eee;
+    border-radius: 5px;
+    padding: 3px 6px;
 }
